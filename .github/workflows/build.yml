@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build with Buildozer
-        uses: schnatterer/buildozer-action@v2
+        uses: yosz/buildozer-action@v1
         with:
           buildozer_version: stable
       - name: Upload APK
