@@ -108,14 +108,14 @@ android.permissions = CAMERA, INTERNET, RECORD_AUDIO, MODIFY_AUDIO_SETTINGS, REA
 # (list) features (adds uses-feature -tags to manifest)
 android.add_features = android.hardware.usb.host
 # (int) Target Android API, should be as high as possible.
-android.api = 33
+android.api = 34
 
 # (int) Minimum API your APK / AAB will support.
 android.minapi = 24
 
 # (int) Android SDK version to use
-#android.sdk = 33
-android.build_tools_version = 33.0.2
+android.sdk = 34
+android.build_tools_version = 34.0.0
 # (str) Android NDK version to use
 android.ndk = 25b
 
