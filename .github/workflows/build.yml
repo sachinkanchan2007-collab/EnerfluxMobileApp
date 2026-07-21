@@ -17,7 +17,7 @@ jobs:
           pip3 install --user --upgrade buildozer
       - name: Build with Buildozer
         env:
-          ANDROID_ACCEPT_LICENSE: "True"
+          ANDROID_ACCEPT_LICENSE: "1"
         run: |
           buildozer android debug
       - name: Upload APK
