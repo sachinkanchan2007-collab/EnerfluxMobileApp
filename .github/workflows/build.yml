@@ -16,8 +16,10 @@ jobs:
           sudo apt-get install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev cmake libffi-dev libssl-dev
           pip3 install --user --upgrade buildozer
       - name: Build with Buildozer
+        env:
+          ANDROID_ACCEPT_LICENSE: "1"
         run: |
-          yes y | buildozer android debug
+          buildozer android debug
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
