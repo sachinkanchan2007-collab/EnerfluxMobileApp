@@ -24,8 +24,9 @@ jobs:
           pip3 install --user --upgrade buildozer cython
 
       - name: Build with Buildozer
+        env:
+          BUILDER_ALLOW_MISSING_DEPS: "1"
         run: |
-          yes | sdkmanager --licenses || true
           buildozer -v android debug
 
       - name: Upload APK
